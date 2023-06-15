@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+}
+.cont{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.rec1{
+    background-color: red;
+    height: 500px;
+    width: 1000px;
+}
+.rec2{
+    background-color: blue;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.rec2:hover{
+    
+}
+/* @keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:920px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:blue; left:0px; top:0px;}
+}
+.rec2 {
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+}
